@@ -1,10 +1,11 @@
-// TODO: answer here
 import * as dotenv from "dotenv";
-import {mapUsers,mapArticles} from "./getter.js";
+import mapUsers from "./getter.js";
+import {mapArticles} from "./getter.js";
 dotenv.config()
 
 function mergeData(usersData, articlesData) {
   const data = mapUsers(usersData)
+
   const result = {
     projectName : process.env.PROJECT_NAME,
     accessToken : process.env.ACCESS_TOKEN,
@@ -48,6 +49,3 @@ const articles = [
 ]
 
 console.log(mergeData(users,articles));
-// console.log(mapUsers(users));
-// console.log(mapArticles(articles));
-// TODO: answer here
