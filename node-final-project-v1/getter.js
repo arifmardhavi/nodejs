@@ -1,17 +1,18 @@
-export function mapUsers(users) {
-  return {
+function mapUsers(users) {
+  let result =  {
     data : users,
     count : users.length
   }
-  // return result; // TODO: replace this
+  return result; // TODO: replace this
 }
 
-export function mapArticles(articles) {
-  return {
+function mapArticles(articles) {
+  let data = {
     data : articles,
     count : articles.length
   }
-  // return result; // TODO: replace this
+  return data; // TODO: replace this
 }
 
+export {mapUsers,mapArticles}
 // TODO: answer here

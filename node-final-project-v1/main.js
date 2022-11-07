@@ -1,6 +1,5 @@
 import * as dotenv from "dotenv";
-import mapUsers from "./getter.js";
-import {mapArticles} from "./getter.js";
+import {mapUsers,mapArticles} from "./getter.js";
 dotenv.config()
 
 function mergeData(usersData, articlesData) {
